@@ -7,7 +7,7 @@
 <style>
 @font-face {
     font-family: "Vintage Moon";
-    src: url("Vintage%20Moon%20Regular.ttf") format("truetype");
+    src: url("VintageMoon.ttf") format("truetype");
 }
 
 *{
@@ -16,33 +16,63 @@
     box-sizing:border-box;
 }
 
+html,body{
+    width:100%;
+    height:100%;
+}
+
 body{
-    background:url("fundo.jpg") center center/cover no-repeat;
-    height:100vh;
+    background-image:url("fundo.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
     display:flex;
     justify-content:center;
     align-items:center;
-
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 .container{
+    width:100%;
+    max-width:1000px;
     text-align:center;
+    padding:40px;
 }
 
+/* Flor */
+.flor{
+    width:180px;
+    margin-bottom:20px;
+}
+
+/* Logo */
 .logo{
     font-family:"Vintage Moon", cursive;
-    font-size:150px;
+    font-size:170px;
     color:#000;
     line-height:1;
+    margin-bottom:18px;
 }
 
+/* Subtítulo */
 .subtitulo{
-    margin-top:15px;
-    font-size:32px;
-    color:#333;
-    letter-spacing:1px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+
+    font-size:34px;
+    color:#222;
+    font-family:Georgia, serif;
+}
+
+.subtitulo::before,
+.subtitulo::after{
+    content:"";
+    width:120px;
+    height:2px;
+    background:#222;
 }
 </style>
 
@@ -51,8 +81,16 @@ body{
 <body>
 
 <div class="container">
+
+    <!-- Troque pelo caminho da imagem da flor -->
+    <img src="flor.png" class="flor" alt="Peônia">
+
     <div class="logo">Peony</div>
-    <div class="subtitulo">Floresça do seu jeito</div>
+
+    <div class="subtitulo">
+        Floresça do seu jeito
+    </div>
+
 </div>
 
 </body>
