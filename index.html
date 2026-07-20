@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 @font-face {
@@ -15,26 +14,26 @@ html, body {
     padding: 0;
     background: transparent;
     overflow: hidden;
+    width: fit-content;
+    height: fit-content;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 }
 
-.peony {
+.logo {
     font-family: "Vintage Moon", cursive;
-    font-size: 140px;
-    color: #000;
-    white-space: nowrap;
+    font-size: 160px;
+    color: #000000;
     line-height: 1;
-    padding: 10px 20px;
+    white-space: nowrap;
+    display: inline-block;
 }
 </style>
 </head>
 
 <body>
-    <div class="peony">Peony</div>
+    <span class="logo">Peony</span>
 </body>
 </html>
