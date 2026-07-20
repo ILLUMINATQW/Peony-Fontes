@@ -4,36 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Peony</title>
-
 <style>
 @font-face {
     font-family: "Vintage Moon";
-    src: url("VintageMoon.ttf") format("truetype");
+    src: url("Vintage%20Moon%20Regular.ttf") format("truetype");
 }
 
-body {
-    margin: 0;
-    background: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.peony {
-    font-family: "Vintage Moon", serif;
-    font-size: 120px;
-    color: #000000;
-    text-align: center;
-    line-height: 1;
+body{
+    background:url("fundo.jpg") center center/cover no-repeat;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    text-align:center;
+}
+
+.logo{
+    font-family:"Vintage Moon", cursive;
+    font-size:150px;
+    color:#000;
+    line-height:1;
+}
+
+.subtitulo{
+    margin-top:15px;
+    font-size:32px;
+    color:#333;
+    letter-spacing:1px;
 }
 </style>
 
 </head>
+
 <body>
 
-<div class="peony">Peony</div>
+<div class="container">
+    <div class="logo">Peony</div>
+    <div class="subtitulo">Floresça do seu jeito</div>
+</div>
 
 </body>
 </html>
